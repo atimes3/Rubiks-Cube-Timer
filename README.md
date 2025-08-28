@@ -9,3 +9,5 @@ Features include:
 - Toggleable settings for inspection time, stackmat and scramble display
 - Table of solves in a current session
 - Current average of 5 solves
+
+Can be found at https://atimes3.github.io/Rubiks-Cube-Timer/
