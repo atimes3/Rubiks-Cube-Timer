@@ -1,0 +1,158 @@
+body {
+    text-align: center;
+    background-color: #00334d;
+    color: #ffffff;
+    display: grid;
+    font-family: 'Segoe UI';
+}
+
+table, th, td {
+    border: 1px solid;
+    border-color: #000000;
+    border-collapse: collapse;
+}
+
+button {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-family: 'Segoe UI';
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.ondefault {
+    background-color: #abffab;
+}
+
+.container {
+    display: grid;
+}
+
+.face {
+    grid-template-rows: repeat(3, 25px);
+}
+
+.row {
+    grid-template-columns: repeat(3, 25px);
+}
+
+.face > div > div {
+    height: 25px;
+    width: 25px;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+#stats-table {
+    width: 100%
+}
+
+#stats-and-scrambledisplay {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+#scramble-and-button {
+    position: relative;
+}
+
+#scrambler-button {
+    position: absolute;
+    top: 5px;
+    right: 25%;
+}
+
+#settings {
+    position: absolute;
+    top: 0px;
+    right: 5%;
+}
+
+#settings:hover .dropdown-menu {
+    display: block;
+}
+
+#settings-icon {
+    color: #00abff;
+    font-size: 2em;
+}
+
+#settings-icon:hover {
+    color: #40c0ff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0px;
+    background-color: #005580;
+    border-radius: 15px;
+}
+
+#timer-and-ao5 {
+    align-content: center;
+    height: 60vh;
+}
+
+#timer {
+    font-size: 96px;
+    font-weight: bold;
+    color: #00abff;
+}
+
+#ao5 {
+    font-size: 20px;
+}
+
+#stats-and-scrambledisplay {
+    grid-template-columns: repeat(2, 50%);
+}
+
+#stats-div {
+    height: 225px;
+    overflow-x: auto;
+}
+
+#scramble-display {
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(3, 75px);
+    visibility: hidden;
+}
+
+#up {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#left {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#front {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#right {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#back {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+#down {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#error {
+    color: #ff0000;
+}

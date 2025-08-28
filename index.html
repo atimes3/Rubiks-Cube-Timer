@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles.css">
+        <title>
+            Timer
+        </title>
+    </head>
+
+    <body>
+
+        <div id="scramble-and-buttons">
+            <div id="scramble"></div>
+            <button id="scrambler-button" type="button" onclick="scrambler()">Scramble</button>
+
+            <div id="settings" class="dropdown">
+                <span id="settings-icon">&#9881;</span>
+                <div class="dropdown-menu">
+                    <button id="inspection-toggle" type="button" class="ondefault" onclick="inspection_toggle()">Inspection: ON</button>
+                    <button id="stackmat-toggle" type="button" class="ondefault" onclick="stackmat_toggle()">Stackmat: ON</button>
+                    <button id="display-toggle" type="button" onclick="display_toggle()">Scramble Display: OFF</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="timer-and-ao5">
+            <div id="timer">
+                0.00
+            </div>
+
+            <div id="ao5">
+                Average of 5: -
+            </div>
+        </div>
+
+        <div class="container" id="stats-and-scrambledisplay">
+            <div id="stats-div">
+                <table id="stats-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Scramble</th>
+                            <th>+2</th>
+                            <th>DNF</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="stats">
+
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="container" id="scramble-display">
+                <div class="container face" id="up">
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="container face" id="left">
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="container face" id="front">
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="container face" id="right">
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="container face" id="back">
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="container face" id="down">
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+        </div>
+
+        <script src="scramble.js"></script>
+        <script src="timer.js"></script>
+        <script src="buttons.js"></script>
+
+    </body>
+
+</html>
